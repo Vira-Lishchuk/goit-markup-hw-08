@@ -1,0 +1,36 @@
+.work {
+  margin-top: 0;
+}
+.work-image {
+  display: flex;
+}
+
+.work-image__item {
+  position: relative;
+  width: 370px;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.work-image__title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  &::after {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.work-image__text {
+  @include font(14px, 700, 0.87, 0.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+}

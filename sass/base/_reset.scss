@@ -1,0 +1,40 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #dbd1d1;
+}
+
+.list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.page {
+  color: var(--primary-text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
