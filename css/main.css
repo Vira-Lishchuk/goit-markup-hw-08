@@ -59,7 +59,7 @@ img {
   clip: rect(0 0 0 0);
 }
 
-container {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -68,16 +68,21 @@ container {
 }
 
 @media screen and (min-width: 480px) {
-  width: 480px;
-  margin: 0 auto;
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  width: 768px;
+  .container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  width: 1200px;
+  .container {
+    width: 1200px;
+  }
 }
 
 .hero__button {
@@ -344,12 +349,12 @@ container {
   }
 }
 
-.benefits__item:not(:last-child) {
+.benefits-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .benefits__item:not(:last-child) {
+  .benefits-list__item:not(:last-child) {
     margin-bottom: 0;
   }
 }
