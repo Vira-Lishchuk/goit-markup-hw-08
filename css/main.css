@@ -59,16 +59,18 @@ img {
   clip: rect(0 0 0 0);
 }
 
-.container {
-  margin: 0 auto;
-  width: 100%;
+container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -325,11 +327,12 @@ img {
   padding-top: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .benefits {
-    padding-top: 94px;
-    padding-bottom: 47px;
-  }
+.benefits-list {
+  width: 100%;
+}
+
+.benefits-list img {
+  width: 100;
 }
 
 @media screen and (min-width: 768px) {
@@ -503,6 +506,7 @@ img {
 
 .team__item {
   width: 100%;
+  height: auto;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
   border-bottom-left-radius: 4px;
