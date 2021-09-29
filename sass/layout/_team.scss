@@ -2,7 +2,7 @@
   max-width: 100%;
   height: auto;
   background-color: #f5f4fa;
-  margin-top: 60px;
+  padding-top: 60px;
 
   .team-list {
     @media screen and (min-width: 768px) {
@@ -50,6 +50,9 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 768px) {
