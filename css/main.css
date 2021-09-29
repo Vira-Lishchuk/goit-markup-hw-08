@@ -250,6 +250,10 @@ img {
   }
 }
 
+.contact-list__item {
+  display: flex;
+}
+
 @media screen and (max-width: 767px) {
   .contact-list__item {
     display: none;
