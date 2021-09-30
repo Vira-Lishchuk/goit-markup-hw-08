@@ -18,14 +18,21 @@
 .header-nav {
   display: flex;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    // padding-top: 26px;
+    // padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    margin-right: ;
   }
 }
 
@@ -97,7 +104,7 @@
 .contact-list {
   // display: flex;
   // flex-direction: column;
-  padding: 14px 0;
+  // padding: 14px 0;
   transition: color var(--time-aniamtion) var(--cubic-bezier);
   &:hover,
   &:focus {
