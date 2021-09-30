@@ -306,10 +306,13 @@ img {
 
 .menu-open,
 .menu-close {
-  line-height: 0;
-  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
   border: none;
-  padding: 10px 0;
+  background-color: white;
+  color: #212121;
 }
 
 .menu-open:hover, .menu-open:focus,
@@ -361,12 +364,16 @@ img {
   text-decoration: none;
 }
 
-.menu-contacts-list__list {
+.menu-mob-list__link:hover, .menu-mob-list__link:focus {
+  fill: var(--accent-color);
+}
+
+.menu-contacts-list {
   margin-bottom: 64px;
 }
 
 @media screen and (min-width: 1200px) {
-  .menu-contacts-list__list {
+  .menu-contacts-list__link {
     flex-direction: row;
     align-items: center;
     padding: 0;
@@ -389,7 +396,7 @@ img {
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -401,6 +408,7 @@ img {
 .menu-contacts-list__tel-link {
   font-size: 34px;
   line-height: calc(40 / 34);
+  color: var(--accent-color);
 }
 
 .menu-social-list {
@@ -411,7 +419,7 @@ img {
   margin-right: 10px;
 }
 
-.menu-social-list__item:not(:last-child) .menu-social-link {
+.menu-social-list__item:not(:last-child) .menu-social-list__link {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
 }
@@ -449,6 +457,7 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .site__logo--right {
@@ -474,9 +483,10 @@ img {
 }
 
 .site__logo--bottom {
-  display: block;
   margin-bottom: 20px;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 .hero {
@@ -782,7 +792,13 @@ img {
 }
 
 .footer-socials-box {
-  margin-right: 91px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-socials-box {
+    margin-right: 91px;
+  }
 }
 
 .footer-socials-title {
@@ -868,8 +884,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__contact-map {
-  display: block;
+.footer-contact-list__map {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.71;
@@ -878,7 +893,13 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer__contact-mail {
+@media screen and (min-width: 1200px) {
+  .footer-contact-list__map {
+    display: block;
+  }
+}
+
+.footer-contact-list__mail {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.71;
@@ -888,7 +909,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer__contact-tel {
+.footer-contact-list__tel {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
@@ -898,12 +919,42 @@ img {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
-.footer__contact {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    margin-right: 70px;
+  }
+}
+
+.footer-contact-list {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe__title {
@@ -920,7 +971,7 @@ img {
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   color: var(--accent-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -928,7 +979,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .subscribe__input::placeholder {
@@ -936,6 +987,20 @@ img {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+  }
 }
 
 .subscribe__button {
@@ -960,6 +1025,19 @@ img {
 
 .subscribe__button:hover, .subscribe__button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__button {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    display: inline-flex;
+  }
 }
 
 .subscribe__icon {
@@ -1112,14 +1190,31 @@ img {
 
 .modal {
   position: absolute;
-  width: 520px;
-  min-height: 580px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
   padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close-btn {
@@ -1156,11 +1251,20 @@ img {
 }
 
 .modal-form__title {
-  font-size: 20px;
-  text-align: center;
-  color: var(--title-text-color);
   display: block;
-  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    line-height: 1.15;
+    max-width: unset;
+  }
 }
 
 .modal-form-field {
@@ -1228,16 +1332,39 @@ img {
 }
 
 .modal-form-field__check-label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-field__check-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-color {
-  margin-left: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .check-color {
+    font-size: 14px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-form-field__check-icon {

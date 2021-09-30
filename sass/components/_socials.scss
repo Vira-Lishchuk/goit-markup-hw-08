@@ -49,7 +49,10 @@
   fill: #ffffff;
 }
 .footer-socials-box {
-  margin-right: 91px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 91px;
+  }
 }
 .footer-socials-title {
   margin-bottom: 20px;
