@@ -70,6 +70,7 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -342,6 +343,7 @@ img {
   padding-bottom: 48px;
   padding-left: 40px;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .menu-mob-container {
@@ -820,8 +822,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: -30px;
   margin-top: -30px;
+  margin-left: -30px;
 }
 
 .client-list__item {
@@ -829,9 +831,8 @@ img {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-basis: calc((100% - 60px) / 2);
-  margin-left: 30px;
   margin-top: 30px;
-  margin-bottom: 0px;
+  margin-left: 30px;
 }
 
 .client-list__item:hover, .client-list__item:focus {
@@ -840,15 +841,16 @@ img {
 
 @media screen and (min-width: 768px) {
   .client-list__item {
+    width: 226px;
+    height: 92px;
     flex-basis: calc((100% - 180px) / 3);
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 0px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .client-list__item {
+    width: 170px;
+    height: 92px;
     flex-basis: calc((100% - 180px) / 6);
     margin-left: 30px;
     margin-top: 30px;
@@ -1102,13 +1104,13 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio-item {
-    margin-bottom: 0;
+@media screen and (min-width: 480px) {
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (min-width: 768px) {
   .portfolio-item {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
@@ -1117,7 +1119,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (min-width: 1200px) {
   .portfolio-item {
     display: block;
     box-sizing: border-box;
@@ -1193,12 +1195,13 @@ img {
 }
 
 .button-list {
-  margin-right: -8px;
-  margin-top: -15px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1217,10 +1220,7 @@ img {
 
 .btn-item {
   margin-right: 8px;
-}
-
-.btn-item:last-child {
-  margin-right: 0;
+  margin-bottom: 15px;
 }
 
 .button-item {
@@ -1228,6 +1228,10 @@ img {
   font-size: 16px;
   line-height: 1.62;
   border-radius: 4px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
   background-color: #f5f4fa;
   border: 1px solid #eeeeee;
   color: var(--title-text-color);
@@ -1239,6 +1243,24 @@ img {
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.current {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.button-item .current::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .backdrop {

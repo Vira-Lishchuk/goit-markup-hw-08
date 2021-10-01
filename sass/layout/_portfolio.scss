@@ -54,21 +54,23 @@
   // &:not(:last-child) {
   //   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: block;
-    box-sizing: border-box;
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 2);
+      margin-left: 30px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+      box-sizing: border-box;
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
   }
 }
 
