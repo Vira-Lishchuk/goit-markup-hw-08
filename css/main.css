@@ -511,21 +511,13 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    min-height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/herobackgroundtab1x.jpg");
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/herobackgroundtab2x.jpg");
   }
@@ -533,13 +525,21 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../image/herobackground.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/herobackground.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/herobackground2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -693,7 +693,8 @@ img {
 }
 
 .team {
-  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   background-color: #f5f4fa;
   padding-top: 60px;
@@ -735,8 +736,6 @@ img {
 }
 
 .team-list__item {
-  width: 100%;
-  height: auto;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
   border-bottom-left-radius: 4px;
@@ -766,12 +765,6 @@ img {
 @media screen and (min-width: 1200px) {
   .team-list__item {
     flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .team-list__item {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../image/herobackgroundmob2x.jpg");
   }
 }
 

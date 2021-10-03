@@ -1,5 +1,6 @@
 .team {
-  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
   background-color: #f5f4fa;
   padding-top: 60px;
@@ -38,9 +39,6 @@
 }
 
 .team-list__item {
-  width: 100%;
-
-  height: auto;
   border: 1px solid #eeeeee;
   background-color: #ffffff;
   border-bottom-left-radius: 4px;
@@ -63,15 +61,5 @@
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 120px) / 4);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../../image/herobackgroundmob2x.jpg");
   }
 }
