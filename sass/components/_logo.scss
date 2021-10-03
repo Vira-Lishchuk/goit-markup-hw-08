@@ -4,10 +4,6 @@
   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.site__logo--right {
-  color: #000000;
 
   @media screen and (min-width: 768px) {
     margin-right: 88px;
@@ -18,6 +14,10 @@
     font-size: 26px;
     line-height: 1.19;
   }
+}
+
+.site__logo--right {
+  color: #000000;
 }
 
 .site__logo--bright {
