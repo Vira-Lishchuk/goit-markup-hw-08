@@ -1040,8 +1040,13 @@ img {
 }
 
 .subscribe__form {
-  display: flex;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: flex;
+  }
 }
 
 .subscribe__input {

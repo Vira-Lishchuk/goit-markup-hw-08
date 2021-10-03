@@ -12,7 +12,9 @@
 }
 
 .subscribe__form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   margin-top: 20px;
 }
 
