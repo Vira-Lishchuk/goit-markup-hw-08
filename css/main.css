@@ -488,6 +488,12 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .site__logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .site__logo {
     margin-right: 93px;
@@ -509,6 +515,12 @@ img {
   color: #ffffff;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .site__logo--bottom {
+    margin-right: 0;
+  }
 }
 
 .hero {
